@@ -1,0 +1,48 @@
+
+-- LEGO PARTS INSERT --
+
+INSERT OVERWRITE into til_portfolio_projects.dr_ds55_lego.lego_parts
+SELECT *
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_PARTS;
+
+-- LEGO THEMES INSERT --
+
+INSERT OVERWRITE into til_portfolio_projects.dr_ds55_lego.lego_themes
+SELECT *
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_THEMES;
+
+-- LEGO COLORS INSERT --
+
+INSERT OVERWRITE into til_portfolio_projects.dr_ds55_lego.lego_colors
+SELECT *
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_COLORS;
+
+-- INVENTORY SETS INSERT --
+
+INSERT OVERWRITE into til_portfolio_projects.dr_ds55_lego.lego_inventory_sets
+SELECT *
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_INVENTORY_SETS;
+
+-- INVENTORIES INSERT --
+
+INSERT OVERWRITE into til_portfolio_projects.dr_ds55_lego.lego_inventories
+SELECT *
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_INVENTORIES;
+
+-- LEGO SETS INSERT --
+
+INSERT OVERWRITE into til_portfolio_projects.dr_ds55_lego.lego_sets
+SELECT *
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_SETS;
+
+-- LEGO PART CATEGORIES INSERT --
+
+INSERT OVERWRITE into til_portfolio_projects.dr_ds55_lego.lego_part_categories
+SELECT name, id
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_PART_CATEGORIES;
+
+-- INVENTORY PARTS INSERT --
+
+INSERT overwrite INTO til_portfolio_projects.dr_ds55_lego.lego_inventory_parts
+SELECT *
+FROM TIL_PORTFOLIO_PROJECTS.STAGING.LEGO_INVENTORY_PARTS;
